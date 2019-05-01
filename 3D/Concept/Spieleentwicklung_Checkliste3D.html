@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0098)https://webuser.hs-furtwangen.de/~del/Spieleentwicklung3D/Docs/Spieleentwicklung_Checkliste3D.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<title></title>
+	<meta name="GENERATOR" content="OpenOffice.org 3.3  (Win32)">
+	<meta name="AUTHOR" content="Jirka Dell&#39;Oro-Friedl">
+	<meta name="CREATED" content="20101203;11294995">
+	<meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl">
+	<meta name="CHANGED" content="20141207;23123826">
+	<meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl">
+	<style type="text/css">
+	<!--
+		@page { margin-left: 2cm; margin-right: 2cm; margin-top: 2cm; margin-bottom: 1.3cm }
+		P { margin-bottom: 0.21cm }
+		P.western { font-family: "Arial Narrow", sans-serif }
+		TD P { margin-bottom: 0.21cm }
+		TD P.western { font-family: "Arial Narrow", sans-serif }
+		H2 { margin-bottom: 0.21cm }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "SimSun"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Mangal"; font-size: 14pt; font-style: italic }
+		A:link { so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="de-DE" dir="LTR">
+<p class="western" style="margin-bottom: 0cm">Checkliste für
+Leistungsnachweis <br>Spieleentwicklung 3D<br>© Prof. Dipl.-Ing.
+Jirka R. Dell'Oro-Friedl, HFU 
+</p>
+<p class="western" style="margin-bottom: 0cm"><br>
+</p>
+<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" style="page-break-before: always">
+	<colgroup><col width="14*">
+	<col width="80*">
+	<col width="162*">
+	</colgroup><tbody><tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Titel 
+			</p>
+		</td>
+		<td width="63%">
+			<p class="western">Spaceballs<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Name 
+			</p>
+		</td>
+		<td width="63%">
+			<p class="western">Leonhard Lerbs<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Matrikelnummer 
+			</p>
+		</td>
+		<td width="63%">
+			<p class="western">249083<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl"><meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western"><b>Anforderung </b>
+			</p>
+		</td>
+		<td width="63%">
+			<p class="western"><b>Umsetzung </b>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="13" sdval="1" sdnum="1031;">
+			<p class="western">1</p>
+		</td>
+		<td width="31%">
+			<p class="western">User-Interaktion</p>
+		</td>
+		<td width="63%">
+			<p class="western">•	The own sphere can be moved and rotated through space by mouse and keyboard<br>
+			o	“W” – Forward<br>
+			o	“S” – Backward<br>
+			o	“A” – Left<br>
+			o	“D” – Right<br>
+			o	“Mouse Y” – X Axis<br>
+			o	“Mouse X” – Y Axis<br>
+			•	Exit:<br>
+			o	“Cancel” – "Esc"<br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="13" sdval="2" sdnum="1031;">
+			<p class="western">2</p>
+		</td>
+		<td width="31%">
+			<p class="western">Objektinteraktion</p>
+		</td>
+		<td width="63%">
+			<p class="western">Spheres collide with each other. The bigger sphere absorbs the smaller one. The Volume that gets transfered is based on how big and close ths spheres are.<br>
+			RandomSpheres collide with the border of the playing ground and bounce of it.<br>
+			The controllableSphere cannot cross the Border either.<br>
+			Based on the distance and rotation between the controllableSphere and the other randomSpheres the alpha channel of the mass text for every random sphere is set, so that the further away the other spheres are, the more transparent the taxt becomes.<br>
+			The same counts for the rotation, so that the text is always the right way around, even when the controllableSphere is upside down.<br>
+			Based on how big the controllableSphere is, the randomSpheres change color from red to green and back.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="3" sdnum="1031;">
+			<p class="western">3</p>
+		</td>
+		<td width="31%">
+			<p class="western">Objektanzahl variabel</p>
+		</td>
+		<td width="63%">
+			<p class="western">Spheres will be generated in the beginning of the game according to given parameters.<br>
+			The amount, size and speed can be adjusted<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="4" sdnum="1031;">
+			<p class="western">4</p>
+		</td>
+		<td width="31%">
+			<p class="western">Szenenhierarchie</p>
+		</td>
+		<td width="63%">
+			<p class="western">The Camera is inside of the controllableSphere, to be in a 3rd person view. <br>
+			The controllableSphere is inside of the gameManager, to make use of the messaging system.<br>
+			All used Canvas are stacked inside of each other, to ensure a scalable view of the HUD<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="5" sdnum="1031;">
+			<p class="western">5</p>
+		</td>
+		<td width="31%">
+			<p class="western">Sound</p>
+		</td>
+		<td width="63%">
+			<p class="western">•	Every time a randomSphere interacts with the controllableSphere a sound plays. The sound stays as long as the spheres are touching.<br>
+			•	The touching-sound fades in and out.<br>
+			•	The touching-sound changes pitch, depending on the size of the two interacting volumes<br>
+			•	Music is played<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="6" sdnum="1031;">
+			<p class="western">6</p>
+		</td>
+		<td width="31%">
+			<p class="western">Timeline Animation</p>
+		</td>
+		<td width="63%">
+			<p class="western">In the main menu, an animation of an interchanging cube and sphere is shown. It demonstrates a changing material, too.<br>
+			The sizes of the spheres are directly animated in the code.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="7" sdnum="1031;">
+			<p class="western">7</p>
+		</td>
+		<td width="31%">
+			<p class="western">GUI</p>
+		</td>
+		<td width="63%">
+			<p class="western">•	Before the game begins, a user Interface exists to start and explain the Game.<br>
+			•	During the game the interface shows the current current Volume of the controllableSphere.<br>
+			•	The interface also displays a slider that mass the mass of the controllableSphere compared to the whole existing mass.<br>
+			•	A mass text shows the mass of every randomSphere on every sphere<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="8" sdnum="1031;">
+			<p class="western">8</p>
+		</td>
+		<td width="31%">
+			<p class="western">Externe Daten</p>
+		</td>
+		<td width="63%">
+			<p class="western">From the json file, that will be loaded:
+			•	maxPlayingField --> Size of the Cube where the spheres are in.<br>
+			•	snapValue --> Size under which a sphere ceases to exist.<br>
+			•	massTransferDivisor --> Divisor of the amount of mass transfered per second. The bigger, the less mass gets transfered.<br>
+			•	maxTransSpeed --> Speed of the controllableSphere.<br>
+			•	maxRotSpeed --> Rotation speed of the controllableSphere.<br>
+			•	amountOfSpheres --> Amount of random spheres, that spawn in the beginning.<br>
+			•	maxRadius --> The randomSpheres will have a random Radius between 0 and maxRadius.<br>
+			•	minSpeed --> The RandomSpheres will have a random speed between minSpeed and maxSpeed.<br>
+			•	maxSpeed --> The RandomSpheres will have a random speed between minSpeed and maxSpeed.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="3" sdval="9" sdnum="1031;">
+			<p class="western">9</p>
+		</td>
+		<td width="31%">
+			<p class="western">Statische Klasse</p>
+		</td>
+		<td width="63%">
+			<p class="western">SettingsLoader: Singelton pattern, loads the settings from the json file during the menu. The settings are then available ingame. Declaration: "public void getSetting(string variableName, ref float toSet)"<br>
+			gameManager.sphereList: Contains a reference to all spheres on the scene.<br>
+			gameManager.mySphere: Contains a reference to the controllableSphere.<br>
+			sphereRules.wholeVolume: has the amount of mass of all spheres.<br>
+			<br>
+			All of the above settings values are static, because they are the same for every instance.<br>
+			An InformationKeeper gameObject makes use of the "DontDestroyOnLoad" methode. It passes the endMessage to the menu. But after passing the message it destroys itself.<br>
+			
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="10" sdnum="1031;">
+			<p class="western">10</p>
+		</td>
+		<td width="31%">
+			<p class="western">Serverkommunikation</p>
+		</td>
+		<td width="63%">
+			<p class="western">Retriving the Json file over an URL<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="11" sdnum="1031;">
+			<p class="western">11</p>
+		</td>
+		<td width="31%">
+			<p class="western">Maße &amp; Positionen</p>
+		</td>
+		<td width="63%">
+			<p class="western">The size of objects is, what makes this game. Object size is higly dynamic and relative to each other.<br>
+			The Position of objects is relative to the playingField.<br>
+			The only non relative point of this game is the playingField, which starts as (0,0,0) and expands to maxPlayingField in all three axis.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="12" sdnum="1031;">
+			<p class="western">12</p>
+		</td>
+		<td width="31%">
+			<p class="western">Message System</p>
+		</td>
+		<td width="63%">
+			<p class="western">The message System has been used to cross reference some childs and parents with each other. (broadcastMessage, sendMessageUpwards)<br>
+			Also it has been used to sent an instantiated sphere its initial Radius(sendMessage).
+			More importantly, the simmilar system "getComponent&lt;&gt;()" has widely been used to get, for example, the &lt;sphereRules&gt; object out of a collision. In that way you are guaranteed to have certain methodes, that you can call on a GameObject.
+			Further examples are: 
+			Get the image of a slider foreground, to set the color.
+			Get the renderer of a sphere to change the color
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="13" sdnum="1031;">
+			<p class="western">13</p>
+		</td>
+		<td width="31%">
+			<p class="western">Lichteinsatz</p>
+		</td>
+		<td width="63%">
+			<p class="western">In Menu: Simple directional light for the buttons<br>
+			In the Game: Point light in the middle of the playing field to create a space feeling<br>
+			</p>
+		</td>
+	</tr>
+</tbody></table>
+<h2 class="western"><br><br>
+</h2>
+
+</body></html>

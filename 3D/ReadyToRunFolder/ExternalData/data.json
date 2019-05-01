@@ -1,0 +1,40 @@
+{
+  "mySettings": [
+    {
+      "text": "maxPlayingField",
+      "value": 40
+    },
+    {
+      "text": "snapValue",
+      "value": 0.2
+    },
+    {
+      "text": "massTransferDivisor",
+      "value": 5
+    },
+    {
+      "text": "maxTransSpeed",
+      "value": 10
+    },
+    {
+      "text": "maxRotSpeed",
+      "value": 200
+    },
+    {
+      "text": "amountOfSpheres",
+      "value": 350
+    },
+    {
+      "text": "maxRadius",
+      "value": 2
+    },
+    {
+      "text": "minSpeed",
+      "value": 2
+    },
+    {
+      "text": "maxSpeed",
+      "value": 5
+    }
+  ]
+}

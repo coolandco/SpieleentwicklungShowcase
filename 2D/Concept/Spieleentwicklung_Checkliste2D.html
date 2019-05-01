@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0098)https://webuser.hs-furtwangen.de/~del/Spieleentwicklung2D/Docs/Spieleentwicklung_Checkliste2D.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	
+	<title></title>
+	<meta name="GENERATOR" content="OpenOffice.org 3.3  (Win32)">
+	<meta name="AUTHOR" content="Jirka Dell&#39;Oro-Friedl">
+	<meta name="CREATED" content="20101203;11294995">
+	<meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl">
+	<meta name="CHANGED" content="20141207;23222047">
+	<meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl">
+	<meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl">
+	<style type="text/css">
+	<!--
+		@page { margin-left: 2cm; margin-right: 2cm; margin-top: 2cm; margin-bottom: 1.3cm }
+		P { margin-bottom: 0.21cm }
+		P.western { font-family: "Arial Narrow", sans-serif }
+		TD P { margin-bottom: 0.21cm }
+		TD P.western { font-family: "Arial Narrow", sans-serif }
+		A:link { so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="de-DE" dir="LTR">
+<p class="western" style="margin-bottom: 0cm">Checkliste für
+Leistungsnachweis <br>Spieleentwicklung 2D<br>© Prof. Dipl.-Ing.
+Jirka R. Dell'Oro-Friedl, HFU 
+</p>
+<p class="western" style="margin-bottom: 0cm"><br>
+</p>
+<table width="100%" border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" style="page-break-before: always">
+	<colgroup><col width="14*">
+	<col width="79*">
+	<col width="163*">
+	</colgroup><tbody><tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Titel 
+			</p>
+		</td>
+		<td width="64%">
+			<p class="western">Grab the Pussy<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Name 
+			</p>
+		</td>
+		<td width="64%">
+			<p class="western">Leonhard Lerbs<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western">Matrikelnummer 
+			</p>
+		</td>
+		<td width="64%">
+			<p class="western">249083<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%">
+			<p class="western"><meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl"><meta name="CHANGEDBY" content="Jirka Dell&#39;Oro-Friedl"><br>
+			</p>
+		</td>
+		<td width="31%">
+			<p class="western"><b>Anforderung </b>
+			</p>
+		</td>
+		<td width="64%">
+			<p class="western"><b>Umsetzung </b>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="13" sdval="1" sdnum="1031;">
+			<p class="western">1</p>
+		</td>
+		<td width="31%">
+			<p class="western">Nutzerinteraktion</p>
+		</td>
+		<td width="64%">
+			<p class="western">Der Startknopf im Menü bedient die Status Normal, OnMouseDown, onMouseOver.<br>
+			Der Character kann mit den Pfeiltasten oder „WASD“ bewegt werden.<br>
+			Der Character kann mit „Leertaste“ eine Katze werfen<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="13" sdval="2" sdnum="1031;">
+			<p class="western">2</p>
+		</td>
+		<td width="31%">
+			<p class="western">Objektinteraktion</p>
+		</td>
+		<td width="64%">
+			<p class="western">Im Menü beginnt das Spiel mit Klick auf "Start"<br>
+			Im Menü erscheint die Highscore mit Klick auf "Highscore"<br>
+			Character kollidiert mit Angreifer um zu verlieren<br>
+			Character kollidiert mit Katze um sie aufzuheben. Die Katze verschwindet dann vom Boden und erscheint im Pussy Puffer wieder.<br>
+			Katze kollidiert mit Angreifer um den Angreifer abzuwehren.<br>
+			Angreifer Kollidiert mit der linken Seite des Spielfelds um Leben abzuziehen.<br>
+			Katze Kollidiert mit der rechten Seite des Spielfelds um vom Spielfeld entfernt zu werden.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="3" sdnum="1031;">
+			<p class="western">3</p>
+		</td>
+		<td width="31%">
+			<p class="western">Objektanzahl variabel</p>
+		</td>
+		<td width="64%">
+			<p class="western">Anzahl/Frequenz der Katzen und Angreifer, die erscheinen. Die Warscheinlichkeit der Anzahl/Frequenz legt ein Algorithmus fest. Je mehr Angreifer spawnen, desto mehr Katzen werden gespawnt.<br>
+			Die die Anzahl der Angreifer, die spawnen legt die Schwierigkeit fest.<br>
+			Die Schwierigkeit steigt mit dier Zeit nach der gleichen Formel, wie die Ladekurve eines Kondensators. (1-e^-(x/3))<br>
+			Die Anzahl der Katzen im Pussy Puffer ist variabel und die Anzeige selbstorganisierend.</br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="4" sdnum="1031;">
+			<p class="western">4</p>
+		</td>
+		<td width="31%">
+			<p class="western">Szenenhierarchie</p>
+		</td>
+		<td width="64%">
+			<p class="western">Im Menü:<br>
+			ButtonMovieClip --> Text,Button <br>
+			Im Spiel hat jedes sich bewegende Element folgende Hierarchie:<br>
+			Stage --> BewegungsWrapperMovieClip --> AnimierterMovieClip (z.B. Stage --> Cat --> InnerCat)<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="1" sdval="5" sdnum="1031;">
+			<p class="western">5</p>
+		</td>
+		<td width="31%">
+			<p class="western">Sound</p>
+		</td>
+		<td width="64%">
+			<p class="western">Im Menü, wenn man die Maus über einen Button bewegt wird Sound abgespielt.<br>
+			Bei Bewegungen des Charakters wird Sound abgespielt.<br>
+			Wenn eine Katze geworfen wird, wird Sound abgespielt.<br>
+			Wenn eine Katze aufgehoben wird, wird Sound abgespielt.<br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="6" sdnum="1031;">
+			<p class="western">6</p>
+		</td>
+		<td width="31%">
+			<p class="western">Zeitleistenanimation</p>
+		</td>
+		<td width="64%">
+			<p class="western">•	Katzen haben verschiedene Animationszustände<br>
+			o	stehen<br>
+			o	werfen<br>
+			•	Der Character hat verschiedene Animationszustände<br>
+			o	laufen, keine Katze halten<br>
+			o	laufen, Katze halten<br>
+			o	stehen, keine Katze halten<br>
+			o	stehen, Katze halten<br>
+			•	Angreifer haben verschiedene Animationszustände<br>
+			o	laufen<br>
+			o	stehen<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="7" sdnum="1031;">
+			<p class="western">7</p>
+		</td>
+		<td width="31%">
+			<p class="western">GUI mit Komponenten</p>
+		</td>
+		<td width="64%">
+			<p class="western">•	Es existiert ein User interface vor Beginn des Spiels um<br>
+			o	Das Spiel zu starten<br>
+			o	Die aktuelle Highscore vom Server abzurufen und anzuzeigen<br>
+			o	Den Spielernamen einzugeben<br>
+			•	Es existiert ein User Interface während eines Levels, um den aktuellen Status, wie z.B. Punkte, Katzenpuffer und Leben anzuzeigen.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="8" sdnum="1031;">
+			<p class="western">8</p>
+		</td>
+		<td width="31%">
+			<p class="western">Externe Daten</p>
+		</td>
+		<td width="64%">
+			<p class="western">		Aus der Settings.xml<br>
+			MAX_X_SPEED --> Geschwindigkeit aller sich bewegenden Objekte<br>
+			MAX_Y_SPEED --> Geschwindigkeit aller sich bewegenden Objekte<br>
+
+			MAX_X_SPEED_CHAR --> Geschwindigkeit des Characters<br>
+			MAX_Y_SPEED_CHAR --> Geschwindigkeit des Characters<br>
+			pussyPuffer --> "Startguthaben" an Katzen<br>
+
+			MAX_X_SPEED_CAT --> Geschwindigkeit der fliegenden Katzen<br>
+
+			DIFFICULTYSETTING1 --> Schwierigkeit. Normalerweiße 2. Je höher, desto schwieriger. Vermindert die zeit, bis es Schwieriger wird.<br>
+			DIFFICULTYSETTING2 --> Schwierigkeit. Normalerweiße 1. Je höher, desto schwieriger. Erhöht die anzahl der spawnenden Angreifer.<br>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" height="3" sdval="9" sdnum="1031;">
+			<p class="western">9</p>
+		</td>
+		<td width="31%">
+			<p class="western">Dokumentklasse</p>
+		</td>
+		<td width="64%">
+			<p class="western">Es existieren ca. 80 Methoden in 20 Dokumentenklassen, die das komplette Spiel definieren. Es wurde so gut wie kein "Zeitleistenscript" benutzt.<br>
+			Zu den wichtigsten Klassen gehört die "MainGameClass". Sie beinhaltet alle überwachten bewegbaren Game Objekte und stelld die Dokumentenklasse der stage dar.<br>
+			Der HierarchieManager beinhaltet alle Anzeigeobjekte, und sortiert diese ein, damit sie richtig angezeit werden<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="10" sdnum="1031;">
+			<p class="western">10</p>
+		</td>
+		<td width="31%">
+			<p class="western">Serverkommunikation</p>
+		</td>
+		<td width="64%">
+			<p class="western">Die Highscore von den 10 besten Scores inclusive Namen, werden auf dem Server verwaltet. Dabei Sortiert der Server die Liste und gibt nur die 10 besten Scores zurück<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="11" sdnum="1031;">
+			<p class="western">11</p>
+		</td>
+		<td width="31%">
+			<p class="western">Zustandsrepräsentation</p>
+		</td>
+		<td width="64%">
+			<p class="western">Animationen werden in der Zeitleiste ausgeführt. Der Zustand wird jedoch über die Klasse AnimationStateManager verwaltet. Am Ende einer Animation wird lediglich die Routine() aufgerufen, die entscheidet, was als nächstes ausgeführt werden soll.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="12" sdnum="1031;">
+			<p class="western">12</p>
+		</td>
+		<td width="31%">
+			<p class="western">Verhaltensklassen</p>
+		</td>
+		<td width="64%">
+			<p class="western">Das grundsätzliche Verhalten eines jeden bewegbaren Objekts wird in der MovementClass bestimmt. Alle beweglichen MovieClips sollten davon abgeleitet sein.<br>
+			Die abgeleitete Klasse darf dann selbst bestimmen, was sie aus der Vorgabe der MovementClass benutzt und was nicht.<br>
+			Die MovementClass stellt alle nötigen Funktionalitäten für Bewegung und Level-Begrenzung bereit.<br>
+			</p>
+		</td>
+	</tr>
+	<tr valign="TOP">
+		<td width="5%" sdval="13" sdnum="1031;">
+			<p class="western">13</p>
+		</td>
+		<td width="31%">
+			<p class="western">Subklassen</p>
+		</td>
+		<td width="64%">
+			<p class="western">Alle Spielfiguren müssen durch die 2D Gegebenheiten in der richtigen Reihenfolge/Ebene angezeigt werden. Deswegen sollten alle Klassen, die bewegt werden sollen, von dem Hierarchie Manager abgeleitet werden. Im Konstruktor dieses Managers werdern die Klassen direkt einer Liste hinzugefügt, die jedes Frame nach "y" sortiert wird. <br>
+			Die MovementClass wird dann vom HierarchieManager abgeleitet und stellt alle Funktionalitäten für Bewegung und Level-Begrenzung bereit.<br>
+			Alle spezial Anforderungen werden dann von der Objektklasse, die sich von der MovementClass ableitet, selbst implementiert oder überschrieben. Hier kann man auch tollen Gebrauch von der "override" Funktion machen, um methodenaufrufe zu verändern. (z.B. Funktion loadValues())<br>
+			Für den AnimationStateManager gilt das gleiche. Alle Klassen, die Animationen ausführen wollen, leiten sich davon ab. Die klasse sollte dann wenigstens die "idle" animation implementieren. Dann kann aus einer Cross-Referenz aus der MovementClass die Animation aufgerufen werden. <br>
+		</td>
+	</tr>
+</tbody></table>
+<p class="western" style="margin-bottom: 0cm"><br>
+</p>
+
+</body></html>

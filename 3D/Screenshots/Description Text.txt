@@ -1,0 +1,15 @@
+o    Spaceballs
+
+o    leonhard Lerbs
+
+o    2018
+
+o    Computer Networking
+
+o    7. Semester, 6. Lehrplansemester
+
+o    End up as the biggest sphere.
+
+o    Move your sphere with "W","A","S","D", and the mouse. "Esc" to get back to the menu.
+
+o    I allow the Faculty of Digital Media of the HFU to display the application when desired, especially at the “Tag der Medien”, with explicit reference to the author.

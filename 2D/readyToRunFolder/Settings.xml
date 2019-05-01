@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SettingsLoad id="AllSettings">
+	<MovementClass>
+		<MAX_X_SPEED Value="4" /><!-- Geschwindigkeit aller sich bewegenden Objekte -->
+		<MAX_Y_SPEED Value="2" /><!-- Geschwindigkeit aller sich bewegenden Objekte -->
+	</MovementClass> 
+	<Character>
+		<MAX_X_SPEED_CHAR Value="5" /><!-- Geschwindigkeit des Characters -->
+		<MAX_Y_SPEED_CHAR Value="3" /><!-- Geschwindigkeit des Characters -->
+		<pussyPuffer Value="1" /><!-- "Startguthaben" an Katzen -->
+	</Character>
+	<Cat>
+		<MAX_X_SPEED_CAT Value="11" /><!--Geschwindigkeit der fliegenden Katzen -->
+	</Cat>
+    <mainGameClass>
+		<LIVES Value="3" />
+		<DIFFICULTYSETTING1 Value="2" /><!-- Schwierigkeit. Normalerweiße 2. Je höher, desto schwieriger. Vermindert die zeit, bis es Schwieriger wird. -->
+		<DIFFICULTYSETTING2 Value="1" /><!-- Schwierigkeit. Normalerweiße 1. Je höher, desto schwieriger. Erhöht die anzahl der spawnenden Angreifer-->
+	</mainGameClass>
+</SettingsLoad>

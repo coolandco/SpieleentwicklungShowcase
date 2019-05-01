@@ -1,0 +1,12 @@
+{
+    "Maria": "44",
+    "Olaf": "22",
+    "Gustav": "11",
+    "Siegfried": "3",
+    "Natalie": "17",
+    "Jens": "23",
+    "Manuel": "1",
+    "Julia": "34",
+    "Simon": "35",
+    "Antonia": "25"
+}
