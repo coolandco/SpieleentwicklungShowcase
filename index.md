@@ -6,4 +6,4 @@ For the 2D **Grab the Pussy** demo, [see here](https://coolandco.github.io/Spiel
 
 For the 3D **Spaceballs** demo, [see here](https://coolandco.github.io/SpieleentwicklungShowcase/3D/ReadyToRunFolder/index.html). You can find the source code [here](https://github.com/coolandco/SpieleentwicklungShowcase/tree/master/3D/Source).
 
-![Picture](./pictures/ShowcaseScr2.jpg) 
+![Picture](./pictures/ShowcaseScr2.jpg)
