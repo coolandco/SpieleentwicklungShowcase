@@ -1,1 +1,1 @@
-Please go to the project page [here](https://coolandco.github.io/SpieleentwicklungShowcase/).
+Please go to the project page [here](https://leorbs.github.io/SpieleentwicklungShowcase/).
